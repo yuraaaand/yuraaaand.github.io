@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="src/bedpillow.css" rel="stylesheet" />
+    <script src="app.js"></script>
   </head>
 
   <body>
@@ -20,7 +21,10 @@
         alt="shopping_cart"
         class="icons"
       />
-      CART(0)
+      <!-- CART(0) -->
+      <button type="button" class="btn btn-primary h3" data-toggle="modal" data-target="#cart">
+        CART (<span class="total-count"></span>)
+      </button>
     </h3>
     <h3 id="account">
       <img src="images/person.png" alt="person" class="icons" />
@@ -80,7 +84,7 @@
             </button>
           </p>
         </div>
-        <p class="tocart">
+        <p class="tocart add-to-cart btn btn-primary">
           <img
             src="images/shopping_cart_white.png"
             alt="shopping-cart"
