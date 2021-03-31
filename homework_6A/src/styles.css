@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+body {
+  background-image: url("../images/bg.png");
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1,
+h3 {
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+h3 {
+  float: right;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  position: relative;
+}
+
+h2 {
+  font-family: Helvetica, Arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 0.6rem;
+  margin-left: 2rem;
+}
+
+p {
+  font-family: Helvetica, Arial;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-weight: 300;
+  width: 27rem;
+  font-size: 1.3rem;
+}
+
+.status {
+  width: 100vw;
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+}
+
+.icons {
+  width: 1.1rem;
+  position: absolute;
+  left: -1.4rem;
+  top: 0.1rem;
+}
+
+.menu {
+  margin-right: 1.7rem;
+}
+
+.toshop {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: transparent;
+  outline: none;
+  border: 1.5px solid black;
+  font-size: 1.3rem;
+  letter-spacing: 0.17rem;
+  font-family: Helvetica;
+  padding: 1rem 1.7rem;
+}
