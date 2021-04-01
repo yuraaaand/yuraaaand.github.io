@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="src/bedpillow.css" rel="stylesheet" />
-    <script src="src/app.js"></script>
   </head>
 
   <body>
@@ -23,7 +22,7 @@
       />
       <!-- CART(0) -->
       <button type="button" class="btn btn-primary h3" data-toggle="modal" data-target="#cart">
-        CART (<span class="total-count"></span>)
+        CART (<span id="total-count"></span>)
       </button>
     </h3>
     <h3 id="account">
@@ -34,14 +33,14 @@
     <div class="status"><h2>HOME / SHOP / BED PILLOW</h2></div>
     <div class="grid">
       <div class="box a">
-        <a href="bedpillow.html"
-          ><img
+        <!-- <a href="bedpillow.html"> -->
+          <img
             src="images/big-bluebedpillow.png"
             alt="blue-bed-pillow"
             class="products"
-            id="bigbluebedpillow"
+            id="bigbedpillow"
           />
-        </a>
+        <!-- </a> -->
       </div>
 
       <div class="box b">
@@ -67,32 +66,32 @@
           <br />
           <p class="choices">
             Colors:
-            <button class="color blue" id="color-highlight" label="blue"></button>
-            <button class="color pink" label="pink"></button>
-            <button class="color green" label="green"></button>
-            <button class="color grey" label="grey"></button>
+            <button class="color blue" id="color-highlight" label="blue" onclick="selectColor(this)"></button>
+            <button class="color pink" label="pink" onclick="selectColor(this)"></button>
+            <button class="color green" label="green" onclick="selectColor(this)"></button>
+            <button class="color grey" label="grey" onclick="selectColor(this)"></button>
           </p>
           <p class="choices">
             Inserts: &nbsp &nbsp
-            <button class="inserts memoryfoam" id="insert-highlight" label="memory-foam">
+            <button class="inserts memoryfoam" id="insert-highlight" label="memory-foam" onclick="selectInsert(this)">
               Memory Foam
             </button>
-            <button class="inserts duckdown" label="duck-down">
+            <button class="inserts duckdown" label="duck-down" onclick="selectInsert(this)">
               Duck Down
             </button>
-            <button class="inserts polyblend" label="hypoallergenic-poly-blend">
+            <button class="inserts polyblend" label="hypoallergenic-poly-blend" onclick="selectInsert(this)">
               Hypoallergenic Poly-blend
             </button>
           </p>
         </div>
-        <p class="tocart btn btn-primary" id="add-to-cart" data-name="Bed Pillow" data-color="Cozy Denim" data-insert="Memory Foam" data-price = "35.90">
+        <button class="tocart btn btn-primary" id="add-to-cart" data-name="Bed Pillow" data-color="Cozy Denim" data-insert="Memory Foam" data-price = "35.90">
           <img
             src="images/shopping_cart_white.png"
             alt="shopping-cart"
             id="whitecart"
           />
           Add to Cart
-        </p>
+        </button>
         <div class="container top">
           <h2 class="details">Details</h2>
           <h2 class="expand">+<h2>
@@ -115,6 +114,9 @@
             <h2 class="expand">+<h2>
         </div>
     </div>
+  
+    <script src="src/app.js"></script>
+    <script src="src/bedpillow.js"></script>
 
   </body>
 </html>
