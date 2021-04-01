@@ -9,7 +9,7 @@
 
   <body>
     <div id="app"></div>
-    <!-- fixed -->
+    <!-- fixed (NAV BAR and TITLE)-->
     <h1>
       <img src="images/hamburger.png" alt="menu" class="menu" />
       FLUFF STUFF
@@ -20,8 +20,7 @@
         alt="shopping_cart"
         class="icons"
       />
-      <!-- CART(0) -->
-      <button type="button" class="btn btn-primary h3" data-toggle="modal" data-target="#cart">
+      <button type="button" class="btn btn-primary h3" data-toggle="modal" data-target="#cart" onclick="toCart()">
         CART (<span id="total-count"></span>)
       </button>
     </h3>
@@ -29,18 +28,16 @@
       <img src="images/person.png" alt="person" class="icons" />
       YURAN DING
     </h3>
-    <!-- unfixed -->
-    <div class="status"><h2>HOME / SHOP / BED PILLOW</h2></div>
+    <!-- unfixed (CONTENT)-->
+    <div class="status"><h2>SHOP / BED PILLOW</h2></div>
     <div class="grid">
       <div class="box a">
-        <!-- <a href="bedpillow.html"> -->
           <img
             src="images/big-bluebedpillow.png"
             alt="blue-bed-pillow"
             class="products"
             id="bigbedpillow"
           />
-        <!-- </a> -->
       </div>
 
       <div class="box b">

@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+body {
+  /* background-image: url("../images/bg.png");
+  background-size: cover; /* <------ */
+  /* background-repeat: no-repeat;
+  background-position: center center; */
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1,
+h3 {
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.h3 {
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
+  margin-left: -.3rem;
+  margin-top: -.2rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  font-size: .9rem;
+  background-color: transparent;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+h3 {
+  float: right;
+  font-size: 0.9rem;
+  margin: 1rem;
+  margin-top: 2rem;
+  position: relative;
+}
+
+h2 {
+  font-family: Helvetica, Arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 0.6rem;
+  margin-left: 1rem;
+}
+
+p {
+  font-family: Helvetica, Arial;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-weight: 300;
+  width: 27rem;
+  font-size: 1.3rem;
+}
+
+.status {
+  width: 100vw;
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+}
+
+.icons {
+  width: 1.1rem;
+  position: absolute;
+  left: -1.4rem;
+  top: 0.1rem;
+}
+
+.menu {
+  margin-right: 1.7rem;
+}
+
+
+
+
+
+
+.title {
+  position: relative;
+}
+
+
+
+.title {
+  font-size: 1.4rem;
+  padding: 1rem 1rem;
+}
+
+
+.tocheckout {
+  /* position: absolute;
+  top: 80%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  position: relative;
+  text-align: center;
+  background: black;
+  color: white;
+  display: inline-block;
+  width: 100%;
+  outline: none;
+  border: 1.5px solid black;
+  font-size: 1.3rem;
+  letter-spacing: 0.17rem;
+  font-family: Helvetica;
+  padding: 0.7rem;
+  margin-left: 0;
+}
+
+
+
+#add-to-cart {
+  cursor: pointer;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.item {
+  /* margin: 1rem; */
+}
+
+.iteminfo{
+  float: top;
+  line-height: 0.8rem;
+  font-weight: 400;
+}
+
+.iteminfosmall{
+    float: top;
+    line-height: 0.5rem;
+    font-size: 1rem;
+  }
+
+.quantitybox{
+    position: absolute;
+    border: 1.5px solid black;
+    margin: 0;
+    bottom: 1rem;
+    width: 10rem;
+    left: 1rem;
+    height: 2.5rem;
+    padding-top: .7rem;
+    top: 1rem;
+    text-align: center;
+
+}
+
+.plus,
+.minus {
+    position: absolute;
+    margin: 0;
+    bottom: 1.56rem;
+    border: none;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    top: 1rem;
+    cursor: pointer;
+    font-family: Helvetica;
+    background: transparent;
+}
+
+.minus{
+    left: 1.3rem;
+}
+.plus {
+    left: 9rem;
+}
+
+.testbox{
+    position: relative;
+}
+
+.grid {
+    display: grid;
+    /* border: 2px blue solid; */
+    width: 100%;
+    /* height: 100%; */
+    border-bottom: 1.5px solid black;
+    grid-template-columns: 16% 68% 16%;
+    grid-template-rows: 30% 30% 30%;
+  }
+
+.total p{
+    font-weight: 500;
+    letter-spacing: .2rem;
+}

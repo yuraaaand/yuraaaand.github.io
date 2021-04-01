@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>FLUFF STUFF CART</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/cart.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <!-- fixed (NAV BAR)-->
+    <h1>
+      <img src="images/hamburger.png" alt="menu" class="menu" />
+      FLUFF STUFF
+    </h1>
+    <h3 id="cart">
+      <img
+        src="images/shopping_cart.png"
+        alt="shopping_cart"
+        class="icons"
+      />
+      <button type="button" class="btn btn-primary h3" data-toggle="modal" data-target="#cart" onclick="toCart()">
+        CART (<span id="total-count"></span>)
+      </button>
+    </h3>
+    <h3 id="account">
+      <img src="images/person.png" alt="person" class="icons" />
+      YURAN DING
+    </h3>
+    <!-- unfixed -->
+    <div class="status"><h2>CART</h2></div>
+    <div class="grid item">
+        <div>
+            <img src="images/big-bluebedpillow.png" alt="blue-bed-pillow" class="itempic" width=200/>
+        </div>
+        <div>
+            <p class="iteminfo">Bed Pillow</p>
+            <p class="iteminfo">$35.90</p>
+            <br><br><br><br><br>
+            <p class="iteminfosmall">Color: Cozy Denim</p>
+            <p class="iteminfosmall">Insert: Memory Foam</p>
+        </div>
+        <div class="testbox">
+            <p class="quantitybox"> 1 </p>
+            <button class="minus">-</button>
+            <button class="plus">+</button>
+        </div>
+
+    </div>
+    <div class="total">
+        <p>Total: $35.90</p>
+    </div>
+    <button class="tocheckout btn btn-primary" id="checkout">
+        Checkout
+    </button>
+    <!-- <div class="grid">
+
+      <div class="box b">
+        <div class="container top">
+          <h2 class="details">Details</h2>
+          <h2 class="expand">+<h2>
+        </div>
+
+        <div class="container">
+            <h2 class="details">More about Inserts</h2>
+            <h2 class="expand">+<h2>
+        </div>
+        <div class="container">
+            <h2 class="details">Shipping and Returns</h2>
+            <h2 class="expand">+<h2>
+        </div>
+        <div class="container">
+            <h2 class="details">Care</h2>
+            <h2 class="expand">+<h2>
+        </div>
+        <div class="container">
+            <h2 class="details">Q&A</h2>
+            <h2 class="expand">+<h2>
+        </div>
+    </div> -->
+  
+    <script src="src/app.js"></script>
+
+  </body>
+</html>

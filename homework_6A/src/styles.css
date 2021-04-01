@@ -66,6 +66,7 @@ p {
   border-bottom: 1.5px solid black;
 }
 
+
 .icons {
   width: 1.1rem;
   position: absolute;
@@ -90,4 +91,8 @@ p {
   letter-spacing: 0.17rem;
   font-family: Helvetica;
   padding: 1rem 1.7rem;
+}
+
+.btn {
+  cursor: pointer;
 }

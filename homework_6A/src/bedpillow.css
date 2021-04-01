@@ -283,3 +283,7 @@ p.choices {
 #add-to-cart {
   cursor: pointer;
 }
+
+.btn {
+  cursor: pointer;
+}

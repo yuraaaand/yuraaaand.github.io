@@ -203,3 +203,8 @@ button.grey {
 button.highlight {
   border: 0.07rem solid black;
 }
+
+
+.btn {
+  cursor: pointer;
+}

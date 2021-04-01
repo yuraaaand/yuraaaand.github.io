@@ -226,3 +226,7 @@ var shoppingCart = (function() {
   
   displayCart();
   
+function toCart() {
+    window.open("cart.html", "_self");
+}
+  
