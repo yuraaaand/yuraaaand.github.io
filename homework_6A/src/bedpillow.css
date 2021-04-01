@@ -159,7 +159,7 @@ button.inserts:active {
   outline: none;
 }
 
-button.inserts.highlight {
+#insert-highlight {
   color: black;
   border: 0.1rem solid black;
 }
@@ -202,7 +202,7 @@ button.grey {
   background-color: #a4a2a4;
 }
 
-button.highlight {
+#color-highlight {
   border: 0.1rem solid black;
 }
 
@@ -278,4 +278,8 @@ p.choices {
   margin-right: 1.7rem;
   font-weight: 300;
   line-height: 1.1rem;
+}
+
+#add-to-cart {
+  cursor: pointer;
 }
