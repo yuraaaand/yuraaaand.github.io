@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 
+/* This is the stylesheet for home page */
+
 body {
   background-image: url("../images/bg.png");
   background-size: cover; /* <------ */
@@ -9,6 +11,8 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+
+/* All the typography settings here */
 
 h1,
 h3 {
@@ -22,12 +26,12 @@ h3 {
 .h3 {
   font-family: "Open Sans", sans-serif;
   display: inline-block;
-  margin-left: -.3rem;
-  margin-top: -.2rem;
+  margin-left: -0.3rem;
+  margin-top: -0.2rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
   border: none;
-  font-size: .9rem;
+  font-size: 0.9rem;
   background-color: transparent;
 }
 
@@ -60,12 +64,13 @@ p {
   font-size: 1.3rem;
 }
 
+/* Styles for nav bar */
+
 .status {
   width: 100vw;
   border-top: 1.5px solid black;
   border-bottom: 1.5px solid black;
 }
-
 
 .icons {
   width: 1.1rem;
@@ -77,6 +82,8 @@ p {
 .menu {
   margin-right: 1.7rem;
 }
+
+/* Styles for main content */
 
 .toshop {
   position: absolute;

@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 
+/* This is the stylesheet for bedpillow shop detail page */
+
 body {
-  /* background-image: url("../images/bg.png");
-  background-size: cover; /* <------ */
-  /* background-repeat: no-repeat;
-  background-position: center center; */
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
+
+/* All the typography settings here */
 
 h1,
 h3 {
@@ -61,6 +61,7 @@ p {
   font-size: 1.3rem;
 }
 
+/* Styles for nav bar */
 .status {
   width: 100vw;
   border-top: 1.5px solid black;
@@ -78,6 +79,7 @@ p {
   margin-right: 1.7rem;
 }
 
+/* Styles for main content */
 .toshop {
   position: absolute;
   top: 80%;
@@ -95,7 +97,6 @@ p {
 
 .grid {
   display: grid;
-  /* border: 2px blue solid; */
   width: 100%;
   height: 100%;
   grid-template-columns: 50% 50%;
@@ -108,7 +109,7 @@ p {
   border-bottom: 1.5px black solid;
   border-right: 1.5px black solid;
   position: relative;
-  background-size: cover; /* <------ */
+  background-size: cover; 
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
@@ -165,7 +166,6 @@ button.inserts:active {
 }
 
 button.inserts {
-  /* position: absolute; */
   height: 1.8rem;
   color: gray;
   border: 0.1rem solid gray;
@@ -224,11 +224,6 @@ p.choices {
 }
 
 .tocart {
-  /* position: absolute;
-  top: 80%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); */
   position: relative;
   text-align: center;
   background: black;
@@ -246,8 +241,6 @@ p.choices {
 
 #whitecart {
   width: 1.3rem;
-  /* position: absolute;
-  left: 37%; */
 }
 
 .container.top {
