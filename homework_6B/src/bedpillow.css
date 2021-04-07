@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+/* This is the stylesheet for bedpillow shop detail page */
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* All the typography settings here */
+
+h1,
+h3 {
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.h3 {
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
+  margin-left: -.3rem;
+  margin-top: -.2rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  font-size: .9rem;
+  background-color: transparent;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+h3 {
+  float: right;
+  font-size: 0.9rem;
+  margin: 1rem;
+  margin-top: 2rem;
+  position: relative;
+}
+
+h2 {
+  font-family: Helvetica, Arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 0.6rem;
+  margin-left: 1rem;
+}
+
+p {
+  font-family: Helvetica, Arial;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-weight: 300;
+  width: 27rem;
+  font-size: 1.3rem;
+}
+
+/* Styles for nav bar */
+.status {
+  width: 100vw;
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+}
+
+.icons {
+  width: 1.1rem;
+  position: absolute;
+  left: -1.4rem;
+  top: 0.1rem;
+}
+
+.menu {
+  margin-right: 1.7rem;
+}
+
+/* Styles for main content */
+.toshop {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: transparent;
+  outline: none;
+  border: 1.5px solid black;
+  font-size: 1.3rem;
+  letter-spacing: 0.17rem;
+  font-family: Helvetica;
+  padding: 1rem 1.7rem;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100% 100%;
+}
+
+.box {
+  color: black;
+  font-family: Helvetica;
+  border-bottom: 1.5px black solid;
+  border-right: 1.5px black solid;
+  position: relative;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.box.b {
+  position: relative;
+}
+
+.title {
+  position: relative;
+}
+
+#favorite {
+  float: right;
+  position: absolute;
+  top: 1rem;
+  left: 94%;
+  width: 1.6rem;
+}
+
+#bigbedpillow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 1.4rem;
+  padding: 1rem 1rem;
+}
+
+button.color:active {
+  border: 0.1rem solid black;
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+button.inserts:active {
+  border: 0.1rem solid black;
+  color: black;
+  outline: none;
+}
+
+#insert-highlight {
+  color: black;
+  border: 0.1rem solid black;
+}
+
+button.inserts {
+  height: 1.8rem;
+  color: gray;
+  border: 0.1rem solid gray;
+  background: transparent;
+}
+
+button.color {
+  position: absolute;
+  top: 0;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  border: none;
+  top: -10%;
+}
+
+button.blue {
+  left: 10%;
+  background-color: #afc5c5;
+}
+
+button.pink {
+  left: 15%;
+  background-color: #d8c1bf;
+}
+
+button.green {
+  left: 20%;
+  background-color: #a7bca9;
+}
+
+button.grey {
+  left: 25%;
+  background-color: #a4a2a4;
+}
+
+#color-highlight {
+  border: 0.1rem solid black;
+}
+
+.info {
+  font-size: 0.9rem;
+  width: 92%;
+}
+
+p.choices {
+  font-weight: 300;
+  font-size: 1.2rem;
+  display: inline-block;
+  width: 100%;
+}
+
+.choices {
+  position: relative;
+  width: 100%;
+}
+
+.tocart {
+  position: relative;
+  text-align: center;
+  background: black;
+  color: white;
+  display: inline-block;
+  width: 100%;
+  outline: none;
+  border: 1.5px solid black;
+  font-size: 1.3rem;
+  letter-spacing: 0.17rem;
+  font-family: Helvetica;
+  padding: 0.7rem;
+  margin-left: 0;
+}
+
+#whitecart {
+  width: 1.3rem;
+}
+
+.container.top {
+  width: 100%;
+  border-top: 1.7px solid gray;
+  border-bottom: 1.7px solid gray;
+  height: 3rem;
+}
+
+.container {
+  width: 100%;
+  border-bottom: 1.7px solid gray;
+  height: 3rem;
+}
+
+.details {
+  display: inline-block;
+  text-align: left;
+  font-weight: 300;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.expand {
+  display: inline-block;
+  text-align: right;
+  float: right;
+  margin-right: 1.7rem;
+  font-weight: 300;
+  line-height: 1.1rem;
+}
+
+#add-to-cart {
+  cursor: pointer;
+}
+
+.btn {
+  cursor: pointer;
+}

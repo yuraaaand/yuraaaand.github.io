@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>FLUFF STUFF CART</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/cart.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <!-- fixed (NAV BAR)-->
+    <h1>
+      <img src="images/hamburger.png" alt="menu" class="menu" />
+      FLUFF STUFF
+    </h1>
+    <h3 id="cart">
+      <img
+        src="images/shopping_cart.png"
+        alt="shopping_cart"
+        class="icons"
+      />
+      <button type="button" class="btn btn-primary h3" data-toggle="modal" data-target="#cart" onclick="toCart()" label="cart">
+        CART (<span id="total-count"></span>)
+      </button>
+    </h3>
+    <h3 id="account">
+      <img src="images/person.png" alt="person" class="icons" />
+      YURAN DING
+    </h3>
+    <!-- unfixed (content)-->
+    <!-- This part might change when js for this page is implemented in HW6B -->
+    <div class="status"><h2>CART</h2></div>
+    <table class="show-cart table"></table>
+    <div class="grid">
+        <div>
+            <img src="images/big-bluebedpillow.png" alt="blue-bed-pillow" class="itempic" width=200/>
+        </div>
+        <div>
+            <p class="iteminfo">Bed Pillow</p>
+            <p class="iteminfo">$35.90</p>
+            <br><br><br><br><br>
+            <p class="iteminfosmall">Color: Cozy Denim</p>
+            <p class="iteminfosmall">Insert: Memory Foam</p>
+        </div>
+        <div class="testbox">
+            <p class="quantitybox"> 1 </p>
+            <button class="minus">-</button>
+            <button class="plus">+</button>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div>
+          <img src="images/big-bluebedpillow.png" alt="blue-bed-pillow" class="itempic" width=200/>
+        </div>
+        <div>
+            <p class="iteminfo">Bed Pillow</p>
+            <p class="iteminfo">$35.90</p>
+            <br><br><br><br><br>
+            <p class="iteminfosmall">Color: Cozy Denim</p>
+            <p class="iteminfosmall">Insert: Memory Foam</p>
+        </div>
+        <div class="testbox">
+            <p class="quantitybox"> 1 </p>
+            <button class="minus">-</button>
+            <button class="plus">+</button>
+        </div>
+    </div>
+
+
+      
+    <div class="total">
+        <p>Total: $35.90</p>
+    </div>
+    <button class="tocheckout btn btn-primary" id="checkout">
+        Checkout
+    </button>
+  
+    <script src="src/app.js"></script>
+
+  </body>
+</html>

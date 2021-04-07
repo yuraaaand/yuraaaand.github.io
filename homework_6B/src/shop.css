@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+/* This is the stylesheet for shop page */
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* All the typography settings here */
+h1,
+h3 {
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.h3 {
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
+  margin-left: -0.3rem;
+  margin-top: -0.2rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  font-size: 0.9rem;
+  background-color: transparent;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+h3 {
+  float: right;
+  font-size: 0.9rem;
+  margin: 1rem;
+  margin-top: 2rem;
+  position: relative;
+}
+
+h2 {
+  font-family: Helvetica, Arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 0.6rem;
+  margin-left: 1rem;
+}
+
+p {
+  font-family: Helvetica, Arial;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-weight: 300;
+  width: 27rem;
+  font-size: 1.3rem;
+}
+
+/* Styles for nav bar */
+.status {
+  width: 100vw;
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+}
+
+.icons {
+  width: 1.1rem;
+  position: absolute;
+  left: -1.4rem;
+  top: 0.1rem;
+}
+
+.menu {
+  margin-right: 1.7rem;
+}
+
+/* Styles for main content */
+.toshop {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: transparent;
+  outline: none;
+  border: 1.5px solid black;
+  font-size: 1.3rem;
+  letter-spacing: 0.17rem;
+  font-family: Helvetica;
+  padding: 1rem 1.7rem;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 42% 42%;
+}
+
+.box {
+  color: black;
+  font-family: Helvetica;
+  border-bottom: 1.5px black solid;
+  border-right: 1.5px black solid;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 99.84%;
+  overflow: hidden;
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+}
+
+#bluebedpillow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#greycouchpillow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#pinkfloorpoufpillow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#greenroundpillow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.content {
+  font-size: 1.4rem;
+  padding: 1rem 1rem;
+}
+
+button.color:active {
+  border: 0.07rem solid black;
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+button.color {
+  position: absolute;
+  bottom: 5%;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  border: none;
+}
+
+button.blue {
+  left: 41%;
+  background-color: #afc5c5;
+}
+
+button.pink {
+  left: 48%;
+  background-color: #d8c1bf;
+}
+
+button.green {
+  left: 55%;
+  background-color: #a7bca9;
+}
+
+button.grey {
+  left: 62%;
+  background-color: #a4a2a4;
+}
+
+.inserts {
+  position: absolute;
+  bottom: 5.8%;
+  right: 5%;
+  font-family: Helvetica;
+  font-size: 0.82rem;
+}
+
+button.highlight {
+  border: 0.07rem solid black;
+}
+
+.btn {
+  cursor: pointer;
+}
