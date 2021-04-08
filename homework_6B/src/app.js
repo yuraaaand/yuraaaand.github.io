@@ -32,7 +32,7 @@ var shoppingCart = (function () {
   // Add to cart
   obj.addItemToCart = function (name, color, insert, price, count) {
     for (var item in cart) {
-      if (cart[item].name === name) {
+      if (cart[item].name === name && cart[item].color === color && cart[item].insert === insert) {
         cart[item].count++;
         saveCart();
         return;
@@ -57,15 +57,15 @@ var shoppingCart = (function () {
   };
   // Remove item from cart
   obj.removeItemFromCart = function (name, color, insert) {
-    for (var item in cart) {
+    for (var i in cart) {
       if (
-        cart[item].name === name &&
+        cart[i].name === name &&
         cart[i].color === color &&
         cart[i].insert === insert
       ) {
-        cart[item].count--;
-        if (cart[item].count === 0) {
-          cart.splice(item, 1);
+        cart[i].count--;
+        if (cart[i].count === 0) {
+          cart.splice(i, 1);
         }
         break;
       }
@@ -75,13 +75,13 @@ var shoppingCart = (function () {
 
   // Remove all items from cart
   obj.removeItemFromCartAll = function (name, color, insert) {
-    for (var item in cart) {
+    for (var i in cart) {
       if (
-        cart[item].name === name &&
+        cart[i].name === name &&
         cart[i].color === color &&
         cart[i].insert === insert
       ) {
-        cart.splice(item, 1);
+        cart.splice(i, 1);
         break;
       }
     }
@@ -142,85 +142,149 @@ var shoppingCart = (function () {
 })();
 
 // Update cart
-function displayCart() {
-  var cartArray = shoppingCart.listCart();
-  console.log(cartArray);
-  document.getElementById("total-count").innerHTML = shoppingCart.totalCount();
-}
-
-displayCart();
-
-function toCart() {
-  window.open("cart.html", "_self");
-}
-
-
-
-
-// ///////////////////
-// $('.add-to-cart').click(function(event) {
-//   event.preventDefault();
-//   var name = $(this).data('name');
-//   var price = Number($(this).data('price'));
-//   shoppingCart.addItemToCart(name, price, 1);
-//   displayCart();
-// });
-
-// // Clear items
-// $('.clear-cart').click(function() {
-//   shoppingCart.clearCart();
-//   displayCart();
-// });
-
-
 // function displayCart() {
 //   var cartArray = shoppingCart.listCart();
-//   var output = "";
-//   for(var i in cartArray) {
-//     output += "<tr>"
-//       + "<td>" + cartArray[i].name + "</td>" 
-//       + "<td>(" + cartArray[i].price + ")</td>"
-//       + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
-//       + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
-//       + "<button class='plus-item btn btn-primary input-group-addon' data-name=" + cartArray[i].name + ">+</button></div></td>"
-//       + "<td><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>"
-//       + " = " 
-//       + "<td>" + cartArray[i].total + "</td>" 
-//       +  "</tr>";
-//   }
-//   $('.show-cart').html(output);
-//   $('.total-cart').html(shoppingCart.totalCart());
-//   $('.total-count').html(shoppingCart.totalCount());
+//   // console.log(cartArray);
+//   document.getElementById("total-count").innerHTML = shoppingCart.totalCount();
 // }
 
-// // Delete item button
-
-// $('.show-cart').on("click", ".delete-item", function(event) {
-//   var name = $(this).data('name')
-//   shoppingCart.removeItemFromCartAll(name);
-//   displayCart();
-// })
-
-
-// // -1
-// $('.show-cart').on("click", ".minus-item", function(event) {
-//   var name = $(this).data('name')
-//   shoppingCart.removeItemFromCart(name);
-//   displayCart();
-// })
-// // +1
-// $('.show-cart').on("click", ".plus-item", function(event) {
-//   var name = $(this).data('name')
-//   shoppingCart.addItemToCart(name);
-//   displayCart();
-// })
-
-// // Item count input
-// $('.show-cart').on("change", ".item-count", function(event) {
-//    var name = $(this).data('name');
-//    var count = Number($(this).val());
-//   shoppingCart.setCountForItem(name, count);
-//   displayCart();
-// });
-
 // displayCart();
+
+// function toCart() {
+//   window.open("cart.html", "_self");
+// }
+
+
+
+
+  // Update cart
+  // function displayCart() {
+  //   var cartArray = shoppingCart.listCart();
+  //   console.log(cartArray);
+  //   document.getElementById("total-count").innerHTML = shoppingCart.totalCount();
+  // }
+  
+  // ///////////////////
+  // $('.add-to-cart').click(function(event) {
+  //   event.preventDefault();
+  //   var name = $(this).data('name');
+  //   var price = Number($(this).data('price'));
+  //   shoppingCart.addItemToCart(name, price, 1);
+  //   displayCart();
+  // });
+  
+  // // Clear items
+  // $('.clear-cart').click(function() {
+  //   shoppingCart.clearCart();
+  //   displayCart();
+  // });
+  function displayCart() {
+    var cartArray = shoppingCart.listCart();
+    var output = "";
+    var imghtml = "";
+    document.getElementById("total-count").innerHTML = shoppingCart.totalCount();
+    for(var i in cartArray) {
+      if (cartArray[i].name == "Bed Pillow" && cartArray[i].color=="Cozy Denim") {
+        imghtml = " <img src='images/big-bluebedpillow.png' alt='blue-bed-pillow' class='itempic' width=200/>";
+      }
+      if (cartArray[i].name == "Bed Pillow" && cartArray[i].color=="After School Special") {
+        imghtml = " <img src='images/big-pinkbedpillow.png' alt='pink-bed-pillow' class='itempic' width=200/>";
+      }
+      if (cartArray[i].name == "Bed Pillow" && cartArray[i].color=="Morning Haze") {
+        imghtml = " <img src='images/big-greenbedpillow.png' alt='green-bed-pillow' class='itempic' width=200/>";
+      }
+      if (cartArray[i].name == "Bed Pillow" && cartArray[i].color=="Rainy Day") {
+        imghtml = " <img src='images/big-greybedpillow.png' alt='grey-bed-pillow' class='itempic' width=200/>";
+      }
+      output += "<div class='grid'>"
+        + "<div>" + imghtml + "</div>"
+        + "<div>" 
+          + "<p class='iteminfo'>" + cartArray[i].name + "</p>"
+          + "<p class='iteminfo'>$" + (Number(cartArray[i].price) * cartArray[i].count).toFixed(2).toString() + "</p>"
+          + "<br><br><br><br><br>"
+          + "<p class='iteminfosmall'>Color: " + cartArray[i].color + "</p>"
+          + "<p class='iteminfosmall'>Insert: " + cartArray[i].insert + "</p>"
+        + "</div>"
+        + "<div class='testbox'>"
+          + "<p class='quantitybox'>" + + cartArray[i].count + "</p>"
+          + "<button class='minus' data-name='" +cartArray[i].name + "' data-color='" + cartArray[i].color + "' data-insert='" + cartArray[i].insert + "'>-</button>"
+          + "<button class='plus' data-name='" +cartArray[i].name + "' data-color='" + cartArray[i].color + "' data-insert='" + cartArray[i].insert + "'>+</button>"
+        + "</div>"
+        + "</div>";
+    }
+    $('.allitems').html(output);
+    console.log("_____beginhere");
+    console.log(cart);
+    $('.total').html("<p>Total: $"+shoppingCart.totalCart().toString()+"</p>");
+    // $('.total-count').html(shoppingCart.totalCount());
+  }
+  
+  displayCart();
+  
+  function toCart() {
+    window.open("cart.html", "_self");
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  // // Delete item button
+  
+  // $('.show-cart').on("click", ".delete-item", function(event) {
+  //   var name = $(this).data('name')
+  //   shoppingCart.removeItemFromCartAll(name);
+  //   displayCart();
+  // })
+  
+  
+  // $('.allitems').on("click", ".minus", function(event) {
+  //   var name = $(this).data('name');
+  //   var color = $(this).data('color');
+  //   var insert = $(this).data('insert');
+  //   shoppingCart.removeItemFromCartAll(name, color, insert);
+  //   var cartArray = shoppingCart.listCart();
+  //   console.log(cartArray);
+  //   displayCart();
+  // })
+  
+  
+  
+  // -1
+  $('.allitems').on("click", ".minus", function(event) {
+    var name = $(this).data('name');
+    var color = $(this).data('color');
+    var insert = $(this).data('insert');
+    console.log(color);
+    shoppingCart.removeItemFromCart(name, color, insert);
+    displayCart();
+  })
+
+  // +1
+  $('.allitems').on("click", ".plus", function(event) {
+    var name = $(this).data('name');
+    var color = $(this).data('color');
+    var insert = $(this).data('insert');
+    console.log(color);
+    // (name, color, insert, price, count)
+    shoppingCart.addItemToCart(name, color, insert);
+    displayCart();
+  })
+  
+  // // Item count input
+  // $('.show-cart').on("change", ".item-count", function(event) {
+  //    var name = $(this).data('name');
+  //    var count = Number($(this).val());
+  //   shoppingCart.setCountForItem(name, count);
+  //   displayCart();
+  // });
+  
+  // displayCart();
+  
+
+
+

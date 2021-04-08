@@ -162,15 +162,8 @@ p {
   margin: 1rem;
   width: 96%;
   border-bottom: 1px solid rgba(0,0,0,0.2);
-  grid-template-columns: 12.5% 71.5% 16%;
-  /* grid-template-rows: 30% 30% 30%; */
+  grid-template-columns: 15% 69% 16%;
 }
-
-
-/* 
-
-
-*/
 
 .total p {
   font-weight: 500;
