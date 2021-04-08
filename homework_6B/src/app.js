@@ -141,43 +141,7 @@ var shoppingCart = (function () {
   return obj;
 })();
 
-// Update cart
-// function displayCart() {
-//   var cartArray = shoppingCart.listCart();
-//   // console.log(cartArray);
-//   document.getElementById("total-count").innerHTML = shoppingCart.totalCount();
-// }
 
-// displayCart();
-
-// function toCart() {
-//   window.open("cart.html", "_self");
-// }
-
-
-
-
-  // Update cart
-  // function displayCart() {
-  //   var cartArray = shoppingCart.listCart();
-  //   console.log(cartArray);
-  //   document.getElementById("total-count").innerHTML = shoppingCart.totalCount();
-  // }
-  
-  // ///////////////////
-  // $('.add-to-cart').click(function(event) {
-  //   event.preventDefault();
-  //   var name = $(this).data('name');
-  //   var price = Number($(this).data('price'));
-  //   shoppingCart.addItemToCart(name, price, 1);
-  //   displayCart();
-  // });
-  
-  // // Clear items
-  // $('.clear-cart').click(function() {
-  //   shoppingCart.clearCart();
-  //   displayCart();
-  // });
   function displayCart() {
     var cartArray = shoppingCart.listCart();
     var output = "";
@@ -227,33 +191,6 @@ var shoppingCart = (function () {
   
   
   
-  
-  
-  
-  
-  
-  
-  // // Delete item button
-  
-  // $('.show-cart').on("click", ".delete-item", function(event) {
-  //   var name = $(this).data('name')
-  //   shoppingCart.removeItemFromCartAll(name);
-  //   displayCart();
-  // })
-  
-  
-  // $('.allitems').on("click", ".minus", function(event) {
-  //   var name = $(this).data('name');
-  //   var color = $(this).data('color');
-  //   var insert = $(this).data('insert');
-  //   shoppingCart.removeItemFromCartAll(name, color, insert);
-  //   var cartArray = shoppingCart.listCart();
-  //   console.log(cartArray);
-  //   displayCart();
-  // })
-  
-  
-  
   // -1
   $('.allitems').on("click", ".minus", function(event) {
     var name = $(this).data('name');
@@ -275,15 +212,6 @@ var shoppingCart = (function () {
     displayCart();
   })
   
-  // // Item count input
-  // $('.show-cart').on("change", ".item-count", function(event) {
-  //    var name = $(this).data('name');
-  //    var count = Number($(this).val());
-  //   shoppingCart.setCountForItem(name, count);
-  //   displayCart();
-  // });
-  
-  // displayCart();
   
 
 
