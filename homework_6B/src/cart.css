@@ -160,7 +160,7 @@ p {
 .grid {
   display: grid;
   margin: 1rem;
-  width: 96%;
+  width: 98.5%;
   border-bottom: 1px solid rgba(0,0,0,0.2);
   grid-template-columns: 15% 69% 16%;
 }
