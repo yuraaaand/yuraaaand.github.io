@@ -23,8 +23,8 @@ var r;
 
 var conWidth; // = 1570; //full wordCloud's position
 var conHeight;
-var conWidth4; //0.64*windowWidth cat 4 position
-var conHeight4; //0,53*windowHeight
+var conWidth4; //0.64*w cat 4 position
+var conHeight4; //0,53*h
 var conWidth3; //= 2500; //cat 3 position
 var conHeight3; //= 450;
 var conWidth2; //= 340; //cat 2 position
@@ -39,7 +39,7 @@ var buttonshow;
 
 var hider4 = [20, 20, 3000, 3000, 100];
 // fill(255);
-//   rect(0,0,windowWidth*2, windowHeight*2);
+//   rect(0,0,w*2, h*2);
 var recarr = [hider4];
 var recarr2 = [];
 
@@ -50,6 +50,21 @@ var winarr = [];
 let fontMediumSerif;
 let fontMediumMono;
 
+
+
+var w = window.innerWidth;
+var h = window.innerHeight;  
+
+
+
+window.onresize = function() {
+  // assigns new values for width and height variables
+  w = window.innerWidth;
+  h = window.innerHeight;  
+  canvas.size(w,h);
+}
+
+
 function preload() {
   data = loadJSON(url2001);
   fontMediumSerif = loadFont('font/IBMPlexSerif-Medium.ttf');
@@ -58,22 +73,22 @@ function preload() {
 
 function setup() {
 
-  var canvas = createCanvas(windowWidth, windowHeight);
+  var canvas = createCanvas(w, h);
   canvas.position(30, 50);
 
-  win = [0, 0, windowWidth - 50, windowHeight];
-  console.log(windowWidth, windowHeight);
+  win = [0, 0, w - 50, h];
+  console.log(w, h);
 
-  conWidth = windowWidth;
-  conHeight = 0.85 * windowHeight;
-  conWidth4 = 0.64 * windowWidth;
-  conHeight4 = 0.53 * windowHeight;
-  conWidth3 = 1.2 * windowWidth;
-  conHeight3 = 0.53 * windowHeight;
-  conWidth2 = 0.64 * windowWidth;
-  conHeight2 = 1.2 * windowHeight;
-  conWidth1 = 1.2 * windowWidth;
-  conHeight1 = 1.2 * windowHeight;
+  conWidth = w;
+  conHeight = 0.85 * h;
+  conWidth4 = 0.64 * w;
+  conHeight4 = 0.53 * h;
+  conWidth3 = 1.2 * w;
+  conHeight3 = 0.53 * h;
+  conWidth2 = 0.64 * w;
+  conHeight2 = 1.2 * h;
+  conWidth1 = 1.2 * w;
+  conHeight1 = 1.2 * h;
 
   drawNav();
 
@@ -145,7 +160,7 @@ function drawNav() {
   textFont(fontMediumMono);
 
 
-  var start = (windowHeight - 60) / 2 - 20;
+  var start = (h - 60) / 2 - 20;
   var unit = 25;
   var margin = 75;
 
@@ -159,7 +174,7 @@ function drawNav() {
   noFill();
   stroke(255, 255, 255);
   // rect(1, start - 100, 140, 175);
-  // rect(windowWidth - 200, start - 100, 140, 175);
+  // rect(w - 200, start - 100, 140, 175);
 
   //     if (data.cat == "1") {
   //   this.color = {
@@ -279,7 +294,7 @@ function drawNav() {
   var event = createElement("h1", "United States v. Morrison");
   event.style("font-family", "fontExtraLightMono");
   event.style("color", "rgb(255, 255, 255)");
-  event.position(20, windowHeight - offw - 42);
+  event.position(20, h - offw - 42);
   event.style("text-decoration", "underline")
   event.style('font-size', '11px');
   event.mouseOver(hl2000);
@@ -289,7 +304,7 @@ function drawNav() {
   var ln = createElement("h1", "|");
   ln.style("font-family", "fontExtraLightMono");
   ln.style("color", "rgb(255, 255, 255)");
-  ln.position(93, windowHeight - offw - 23);
+  ln.position(93, h - offw - 23);
   ln.style('font-size', '12px');
   ln.mouseOver(hl2000);
   ln.mouseOut(rv2000);
@@ -304,7 +319,7 @@ function drawNav() {
   l2000 = createElement("h1", "2000");
   l2000.style("font-family", "fontRegularMono");
   l2000.style("color", "rgb(255, 255, 255)");
-  l2000.position(72, windowHeight - offw - 13);
+  l2000.position(72, h - offw - 13);
   l2000.style('font-size', '20px');
   l2000.mouseOver(hl2000);
   l2000.mouseOut(rv2000);
@@ -333,7 +348,7 @@ function drawNav() {
   l2001 = createElement("h1", "2001");
   l2001.style("font-family", "fontRegularMono");
   l2001.style("color", "rgb(255, 255, 255)");
-  l2001.position(tls + 1 * step, windowHeight - offw);
+  l2001.position(tls + 1 * step, h - offw);
   l2001.style('font-size', '12px');
   l2001.mouseOver(hl2001);
   l2001.mouseOut(rv2001);
@@ -355,7 +370,7 @@ function drawNav() {
   l2002 = createElement("h1", "2002");
   l2002.style("font-family", "fontRegularMono");
   l2002.style("color", "rgb(255, 255, 255)");
-  l2002.position(tls + 2 * step, windowHeight - offw);
+  l2002.position(tls + 2 * step, h - offw);
   l2002.style('font-size', '12px');
   l2002.mouseOver(hl2002);
   l2002.mouseOut(rv2002);
@@ -378,7 +393,7 @@ function drawNav() {
   l2003 = createElement("h1", "2003");
   l2003.style("font-family", "fontRegularMono");
   l2003.style("color", "rgb(255, 255, 255)");
-  l2003.position(tls + 3 * step, windowHeight - offw);
+  l2003.position(tls + 3 * step, h - offw);
   l2003.style('font-size', '12px');
   l2003.mouseOver(hl2003);
   l2003.mouseOut(rv2003);
@@ -400,7 +415,7 @@ function drawNav() {
   l2004 = createElement("h1", "2004");
   l2004.style("font-family", "fontRegularMono");
   l2004.style("color", "rgb(255, 255, 255)");
-  l2004.position(tls + 4 * step, windowHeight - offw);
+  l2004.position(tls + 4 * step, h - offw);
   l2004.style('font-size', '12px');
   l2004.mouseOver(hl2004);
   l2004.mouseOut(rv2004);
@@ -422,7 +437,7 @@ function drawNav() {
   l2005 = createElement("h1", "2005");
   l2005.style("font-family", "fontRegularMono");
   l2005.style("color", "rgb(255, 255, 255)");
-  l2005.position(tls + 5 * step, windowHeight - offw);
+  l2005.position(tls + 5 * step, h - offw);
   l2005.style('font-size', '12px');
   l2005.mouseOver(hl2005);
   l2005.mouseOut(rv2005);
@@ -445,7 +460,7 @@ function drawNav() {
   l2006 = createElement("h1", "2006");
   l2006.style("font-family", "fontRegularMono");
   l2006.style("color", "rgb(255, 255, 255)");
-  l2006.position(tls + 6 * step, windowHeight - offw);
+  l2006.position(tls + 6 * step, h - offw);
   l2006.style('font-size', '12px');
   l2006.mouseOver(hl2006);
   l2006.mouseOut(rv2006);
@@ -467,7 +482,7 @@ function drawNav() {
   l2007 = createElement("h1", "2007");
   l2007.style("font-family", "fontRegularMono");
   l2007.style("color", "rgb(255, 255, 255)");
-  l2007.position(tls + 7 * step, windowHeight - offw);
+  l2007.position(tls + 7 * step, h - offw);
   l2007.style('font-size', '12px');
   l2007.mouseOver(hl2007);
   l2007.mouseOut(rv2007);
@@ -489,7 +504,7 @@ function drawNav() {
   l2008 = createElement("h1", "2008");
   l2008.style("font-family", "fontRegularMono");
   l2008.style("color", "rgb(255, 255, 255)");
-  l2008.position(tls + 8 * step, windowHeight - offw);
+  l2008.position(tls + 8 * step, h - offw);
   l2008.style('font-size', '12px');
   l2008.mouseOver(hl2008);
   l2008.mouseOut(rv2008);
@@ -511,7 +526,7 @@ function drawNav() {
   l2009 = createElement("h1", "2009");
   l2009.style("font-family", "fontRegularMono");
   l2009.style("color", "rgb(255, 255, 255)");
-  l2009.position(tls + 9 * step, windowHeight - offw);
+  l2009.position(tls + 9 * step, h - offw);
   l2009.style('font-size', '12px');
   l2009.mouseOver(hl2009);
   l2009.mouseOut(rv2009);
@@ -532,7 +547,7 @@ function drawNav() {
   l2010 = createElement("h1", "2010");
   l2010.style("font-family", "fontRegularMono");
   l2010.style("color", "rgb(255, 255, 255)");
-  l2010.position(tls + 10 * step, windowHeight - offw);
+  l2010.position(tls + 10 * step, h - offw);
   l2010.style('font-size', '12px');
   l2010.mouseOver(hl2010);
   l2010.mouseOut(rv2010);
@@ -554,7 +569,7 @@ function drawNav() {
   l2011 = createElement("h1", "2011");
   l2011.style("font-family", "fontRegularMono");
   l2011.style("color", "rgb(255, 255, 255)");
-  l2011.position(tls + 11 * step, windowHeight - offw);
+  l2011.position(tls + 11 * step, h - offw);
   l2011.style('font-size', '12px');
   l2011.mouseOver(hl2011);
   l2011.mouseOut(rv2011);
@@ -576,7 +591,7 @@ function drawNav() {
   l2012 = createElement("h1", "2012");
   l2012.style("font-family", "fontRegularMono");
   l2012.style("color", "rgb(255, 255, 255)");
-  l2012.position(tls + 12 * step, windowHeight - offw);
+  l2012.position(tls + 12 * step, h - offw);
   l2012.style('font-size', '12px');
   l2012.mouseOver(hl2012);
   l2012.mouseOut(rv2012);
@@ -598,7 +613,7 @@ function drawNav() {
   l2013 = createElement("h1", "2013");
   l2013.style("font-family", "fontRegularMono");
   l2013.style("color", "rgb(255, 255, 255)");
-  l2013.position(tls + 13 * step, windowHeight - offw);
+  l2013.position(tls + 13 * step, h - offw);
   l2013.style('font-size', '12px');
   l2013.mouseOver(hl2013);
   l2013.mouseOut(rv2013);
@@ -620,7 +635,7 @@ function drawNav() {
   l2014 = createElement("h1", "2014");
   l2014.style("font-family", "fontRegularMono");
   l2014.style("color", "rgb(255, 255, 255)");
-  l2014.position(tls + 14 * step, windowHeight - offw);
+  l2014.position(tls + 14 * step, h - offw);
   l2014.style('font-size', '12px');
   l2014.mouseOver(hl2014);
   l2014.mouseOut(rv2014);
@@ -642,7 +657,7 @@ function drawNav() {
   l2015 = createElement("h1", "2015");
   l2015.style("font-family", "fontRegularMono");
   l2015.style("color", "rgb(255, 255, 255)");
-  l2015.position(tls + 15 * step, windowHeight - offw);
+  l2015.position(tls + 15 * step, h - offw);
   l2015.style('font-size', '12px');
   l2015.mouseOver(hl2015);
   l2015.mouseOut(rv2015);
@@ -664,7 +679,7 @@ function drawNav() {
   l2016 = createElement("h1", "2016");
   l2016.style("font-family", "fontRegularMono");
   l2016.style("color", "rgb(255, 255, 255)");
-  l2016.position(tls + 16 * step, windowHeight - offw);
+  l2016.position(tls + 16 * step, h - offw);
   l2016.style('font-size', '12px');
   l2016.mouseOver(hl2016);
   l2016.mouseOut(rv2016);
@@ -686,7 +701,7 @@ function drawNav() {
   l2017 = createElement("h1", "2017");
   l2017.style("font-family", "fontRegularMono");
   l2017.style("color", "rgb(255, 255, 255)");
-  l2017.position(tls + 17 * step, windowHeight - offw);
+  l2017.position(tls + 17 * step, h - offw);
   l2017.style('font-size', '12px');
   l2017.mouseOver(hl2017);
   l2017.mouseOut(rv2017);
@@ -708,7 +723,7 @@ function drawNav() {
   l2018 = createElement("h1", "2018");
   l2018.style("font-family", "fontRegularMono");
   l2018.style("color", "rgb(255, 255, 255)");
-  l2018.position(tls + 18 * step, windowHeight - offw);
+  l2018.position(tls + 18 * step, h - offw);
   l2018.style('font-size', '12px');
   l2018.mouseOver(hl2018);
   l2018.mouseOut(rv2018);
@@ -730,7 +745,7 @@ function drawNav() {
   l2019 = createElement("h1", "2019");
   l2019.style("font-family", "fontRegularMono");
   l2019.style("color", "rgb(255, 255, 255)");
-  l2019.position(tls + 19 * step, windowHeight - offw);
+  l2019.position(tls + 19 * step, h - offw);
   l2019.style('font-size', '12px');
   l2019.mouseOver(hl2019);
   l2019.mouseOut(rv2019);
@@ -752,7 +767,7 @@ function drawNav() {
   l2020 = createElement("h1", "2020");
   l2020.style("font-family", "fontRegularMono");
   l2020.style("color", "rgb(255, 255, 255)");
-  l2020.position(tls + 20 * step, windowHeight - offw);
+  l2020.position(tls + 20 * step, h - offw);
   l2020.style('font-size', '12px');
   l2020.mouseOver(hl2020);
   l2020.mouseOut(rv2020);
