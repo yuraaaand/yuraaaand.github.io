@@ -19,7 +19,7 @@ var url2001 = 'data/data2000.json';
 var max_size = 0;
 var slider, sliderLabel;
 var r;
-var w = 400;
+// var w = 400;
 
 var conWidth; // = 1570; //full wordCloud's position
 var conHeight;
