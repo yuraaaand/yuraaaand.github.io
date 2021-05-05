@@ -1,0 +1,85 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #273754; 
+/*   #302D50; */
+/*   #283f6a; */
+/*   #372754; */
+  
+}
+
+body {
+/*   background-image: url("images/2000_morrison.png"); */
+/*   background-blend-mode: overlay; */
+/*   background-image-opacity: 10%; */
+  background-size: 1440px;
+/*   background-repeat:no-repeat;
+ */
+}
+
+canvas {
+  display: block;
+}
+
+
+.image {
+  display: block;
+  filter: sepia(100%) hue-rotate(182deg) saturate(225%) brightness(0.65);
+  background-blend-mode: overlay;
+  background-color: #273754; 
+  width: 1440px;
+  height: auto;
+  opacity: 80%;
+}
+
+
+.image:after {
+  background: rgba(255, 150, 0, 0.75);
+}
+
+
+/* .image:hover {
+  opacity: 50%;
+  transition: 0.2s ease;
+  width: 1440px;
+
+  background-blend-mode: overlay;
+}  */
+
+/* 
+---------------
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #302D50;
+  
+  
+}
+
+body {
+  background-image: url("images/2000_morrison.png");
+  background-blend-mode: overlay;
+  background-image-opacity: 50%;
+  background-size: 1440px;
+  background-repeat:no-repeat;
+
+
+}
+
+canvas {
+  display: block;
+}
+
+
+.image {
+  background-blend-mode: overlay;
+  width: 1440px;
+  height: auto;
+  opacity: 50%;
+}
+
+ */

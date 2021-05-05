@@ -1,0 +1,492 @@
+[
+ {
+   "text": "abortion",
+   "size": 482,
+   "cat": 1
+ },
+ {
+   "text": "barren",
+   "size": 53,
+   "cat": 2
+ },
+ {
+   "text": "bird",
+   "size": 41,
+   "cat": 2
+ },
+ {
+   "text": "birth",
+   "size": 252,
+   "cat": 1
+ },
+ {
+   "text": "bitch",
+   "size": 8,
+   "cat": 2
+ },
+ {
+   "text": "bitchy",
+   "size": null,
+   "cat": 2
+ },
+ {
+   "text": "blonde",
+   "size": 12,
+   "cat": 3
+ },
+ {
+   "text": "boob",
+   "size": null,
+   "cat": 3
+ },
+ {
+   "text": "bossy",
+   "size": 2,
+   "cat": 3
+ },
+ {
+   "text": "breast",
+   "size": 165,
+   "cat": 3
+ },
+ {
+   "text": "brunette",
+   "size": 12,
+   "cat": 3
+ },
+ {
+   "text": "butt",
+   "size": 5,
+   "cat": 3
+ },
+ {
+   "text": "catfight",
+   "size": 2,
+   "cat": 2
+ },
+ {
+   "text": "chick",
+   "size": 32,
+   "cat": 2
+ },
+ {
+   "text": "cougar",
+   "size": null,
+   "cat": 2
+ },
+ {
+   "text": "crazy",
+   "size": 73,
+   "cat": 2
+ },
+ {
+   "text": "cunt",
+   "size": null,
+   "cat": 2
+ },
+ {
+   "text": "curvy",
+   "size": 1,
+   "cat": 3
+ },
+ {
+   "text": "daughter",
+   "size": 451,
+   "cat": 4
+ },
+ {
+   "text": "demonstration",
+   "size": 79,
+   "cat": 1
+ },
+ {
+   "text": "ditsy",
+   "size": 1,
+   "cat": 2
+ },
+ {
+   "text": "emotional",
+   "size": 257,
+   "cat": 2
+ },
+ {
+   "text": "empowered",
+   "size": 20,
+   "cat": 1
+ },
+ {
+   "text": "fat",
+   "size": 207,
+   "cat": 3
+ },
+ {
+   "text": "feisty",
+   "size": 74,
+   "cat": 3
+ },
+ {
+   "text": "fem",
+   "size": null,
+   "cat": 4
+ },
+ {
+   "text": "female",
+   "size": 511,
+   "cat": 4
+ },
+ {
+   "text": "feminine",
+   "size": null,
+   "cat": 4
+ },
+ {
+   "text": "femininity ",
+   "size": 116,
+   "cat": 4
+ },
+ {
+   "text": "feminism",
+   "size": 32,
+   "cat": 1
+ },
+ {
+   "text": "flirty",
+   "size": 37,
+   "cat": 2
+ },
+ {
+   "text": "fox",
+   "size": 14,
+   "cat": 2
+ },
+ {
+   "text": "frigid",
+   "size": 440,
+   "cat": 2
+ },
+ {
+   "text": "frumpy",
+   "size": 46,
+   "cat": 2
+ },
+ {
+   "text": "gender",
+   "size": 7,
+   "cat": 4
+ },
+ {
+   "text": "girl",
+   "size": 237,
+   "cat": 4
+ },
+ {
+   "text": "harassment ",
+   "size": 518,
+   "cat": 1
+ },
+ {
+   "text": "harpy",
+   "size": 234,
+   "cat": 2
+ },
+ {
+   "text": "harridan",
+   "size": null,
+   "cat": 2
+ },
+ {
+   "text": "hormonal",
+   "size": null,
+   "cat": 2
+ },
+ {
+   "text": "housewife",
+   "size": 23,
+   "cat": 4
+ },
+ {
+   "text": "hysterical",
+   "size": 75,
+   "cat": 2
+ },
+ {
+   "text": "Irrational",
+   "size": 27,
+   "cat": 2
+ },
+ {
+   "text": "karen",
+   "size": 59,
+   "cat": 2
+ },
+ {
+   "text": "lady",
+   "size": 361,
+   "cat": 4
+ },
+ {
+   "text": "lesbian",
+   "size": 242,
+   "cat": 4
+ },
+ {
+   "text": "liberation",
+   "size": 225,
+   "cat": 1
+ },
+ {
+   "text": "loose",
+   "size": 108,
+   "cat": 2
+ },
+ {
+   "text": "marching",
+   "size": 115,
+   "cat": 1
+ },
+ {
+   "text": "maternal",
+   "size": 8,
+   "cat": 4
+ },
+ {
+   "text": "meek",
+   "size": 108,
+   "cat": 2
+ },
+ {
+   "text": "mensturation",
+   "size": 32,
+   "cat": 3
+ },
+ {
+   "text": "militant",
+   "size": 4,
+   "cat": 1
+ },
+ {
+   "text": "misogyny",
+   "size": 84,
+   "cat": 1
+ },
+ {
+   "text": "mistress",
+   "size": 18,
+   "cat": 4
+ },
+ {
+   "text": "mommy",
+   "size": 70,
+   "cat": 4
+ },
+ {
+   "text": "moody",
+   "size": 96,
+   "cat": 2
+ },
+ {
+   "text": "mother",
+   "size": 88,
+   "cat": 4
+ },
+ {
+   "text": "nag",
+   "size": 753,
+   "cat": 2
+ },
+ {
+   "text": "ovary ",
+   "size": 3,
+   "cat": 3
+ },
+ {
+   "text": "period",
+   "size": 4,
+   "cat": 3
+ },
+ {
+   "text": "princess",
+   "size": 292,
+   "cat": 2
+ },
+ {
+   "text": "promiscuous",
+   "size": 203,
+   "cat": 2
+ },
+ {
+   "text": "protesting",
+   "size": 14,
+   "cat": 1
+ },
+ {
+   "text": "prude",
+   "size": 19,
+   "cat": 2
+ },
+ {
+   "text": "pussy",
+   "size": 2,
+   "cat": 3
+ },
+ {
+   "text": "radical",
+   "size": 2,
+   "cat": 1
+ },
+ {
+   "text": "rape",
+   "size": 193,
+   "cat": 1
+ },
+ {
+   "text": "redhead",
+   "size": 220,
+   "cat": 3
+ },
+ {
+   "text": "seduce",
+   "size": 15,
+   "cat": 2
+ },
+ {
+   "text": "seductive",
+   "size": 32,
+   "cat": 2
+ },
+ {
+   "text": "sex",
+   "size": 63,
+   "cat": 4
+ },
+ {
+   "text": "sexism",
+   "size": 581,
+   "cat": 1
+ },
+ {
+   "text": "sexual",
+   "size": 51,
+   "cat": 1
+ },
+ {
+   "text": "shrew",
+   "size": 652,
+   "cat": 2
+ },
+ {
+   "text": "shrill",
+   "size": 28,
+   "cat": 2
+ },
+ {
+   "text": "sister",
+   "size": 24,
+   "cat": 4
+ },
+ {
+   "text": "skinny",
+   "size": 464,
+   "cat": 3
+ },
+ {
+   "text": "slut",
+   "size": 95,
+   "cat": 2
+ },
+ {
+   "text": "spinster",
+   "size": 32,
+   "cat": 2
+ },
+ {
+   "text": "suffrage",
+   "size": 16,
+   "cat": 1
+ },
+ {
+   "text": "tease",
+   "size": 14,
+   "cat": 2
+ },
+ {
+   "text": "tomboy",
+   "size": 27,
+   "cat": 2
+ },
+ {
+   "text": "trans",
+   "size": 6,
+   "cat": 4
+ },
+ {
+   "text": "trollop",
+   "size": 391,
+   "cat": 2
+ },
+ {
+   "text": "uterus",
+   "size": null,
+   "cat": 3
+ },
+ {
+   "text": "vagina",
+   "size": 16,
+   "cat": 3
+ },
+ {
+   "text": "victim",
+   "size": 47,
+   "cat": 1
+ },
+ {
+   "text": "virago",
+   "size": 125,
+   "cat": 2
+ },
+ {
+   "text": "voluptuous",
+   "size": null,
+   "cat": 2
+ },
+ {
+   "text": "wap",
+   "size": 23,
+   "cat": 3
+ },
+ {
+   "text": "warrior",
+   "size": null,
+   "cat": 1
+ },
+ {
+   "text": "whore",
+   "size": 57,
+   "cat": 2
+ },
+ {
+   "text": "witch",
+   "size": 30,
+   "cat": 2
+ },
+ {
+   "text": "woman",
+   "size": 65,
+   "cat": 4
+ },
+ {
+   "text": "womb",
+   "size": 1383,
+   "cat": 3
+ },
+ {
+   "text": "",
+   "size": null,
+   "cat": null
+ },
+ {
+   "text": "",
+   "size": 18,
+   "cat": null
+ }
+]
