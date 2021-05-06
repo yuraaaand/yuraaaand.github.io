@@ -1,69 +1,6 @@
-var canvas;
 
 
-var w = window.innerWidth;
-var h = window.innerHeight;  
-
-var alphabet = "ABCČĆDĐEFGHIJKLMNOPQRSŠTUVWXYZŽabcčćdđefghijklmnopqrsštuvwxyzžАБВГҐДЂЕЁЄЖЗЅИІЇЙЈКЛЉМНЊОПРСТЋУЎФХЦЧЏШЩЪЫЬЭЮЯабвгґдђеёєжзѕиіїйјклљмнњопрстћуўфхцчџшщъыьэюяĂÂÊÔƠƯăâêôơư1234567890‘?’“!”(%)[#]{@}/&\<-+÷×=>®©$€£¥¢:;,.*";
-var counters = [];
-var joinedText;// = "And now here is my secret, a very simple secret: It is only with the heart that one can see rightly; what is essential is invisible to the eye. What is essential is invisible to the eye, the little prince repeated, so that he would be sure to remember. It is the time you have wasted for your rose that makes your rose so important.";
-var fontRegularMono;
-
-// function preload() {
-//     // fontRegularMono = loadFont('fonts/IBMPlexMono-Regular.ttf');
-//     joinedText = loadStrings('texts/thelittleprince.txt');
-// }
-
-// function setup() {
-//   canvas = createCanvas(windowWidth, windowHeight);
-//   canvas.style('z-index', '0');
-// //   joinedText = joinedText.replace(/\s+/g, '');
-//   console.log(joinedText);
-//   for (var i = 0; i<alphabet.length; i++) {
-//     counters[i] = 0;
-//   }
-//   countCharacters();
-// }
-
-// function countCharacters(){
-//   for (var i = 0; i< joinedText.length; i++) {
-//     var c = joinedText.charAt(i);
-//     var upperCaseChar = c.toUpperCase();
-//     var index = alphabet.indexOf(upperCaseChar);
-//     if (index >= 0) counters[index]++;  
-//   } 
-// }
-
-// function draw() {
-//   background(255,255,0,1);
-
-//   posX = 20;
-//   posY = 40;
-
-//   for (var i = 0; i< joinedText.length; i++) {
-//       var upperCaseChar = joinedText.charAt(i).toUpperCase();
-//       var index = alphabet.indexOf(upperCaseChar);
-//       if (index < 0) continue;
-
-//       fill(87,35,129, counters[index] * 3);
-
-
-//       var sortY = index * 20 + 40;
-//       var m = map(mouseX, 50, width - 50, 0, 1);
-//       m = constrain(m, 0, 1);
-//       var interY = lerp(posY, sortY, m);
-
-//       text(joinedText.charAt(i), posX, interY);
-
-//       posX += textWidth(joinedText.charAt(i));
-//       if (posX >= width - 200 && upperCaseChar == " ") {
-//         posY += 30;
-//         posX = 20;
-//       }
-//   }
-// }
-
-var joinedText;
+var joinedText = "So the little prince tamed the fox. And when the hour of his departure drew near... “Ah,” said the fox, “I shall cry.” “It is your own fault,” said the little prince. “I never wished you any sort of harm; but you wanted me to tame you...” “Yes, that is so,” said the fox.“But now you are going to cry!” said the little prince. “Yes, that is so,” said the fox. “Then it has done you no good at all!” “It has done me good,” said the fox, “because of the colour of the wheat fields.” And then he added: “Go and look again at the roses. You will understand now that yours is unique in all the world. Then come back to say goodbye to me, and I will make you a present of a secret.”" ;
 var charSet;
 var counters = [];
 
@@ -73,24 +10,20 @@ var tracking = 29;
 
 var actRandomSeed = 0;
 
-var drawAlpha = true;
+var drawOpacity = true;
 var drawLines = true;
 var drawEllipses = true;
 var drawText = true;
-
-function preload() {
-  joinedText = loadStrings('assets/js/thelittleprince.txt');
-}
+var canvas;
 
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
-  canvas.style('z-index', '0');
-  colorMode(HSB, 360, 100, 100, 100);
+  canvas.style('z-index', '2');
 
   textFont('monospace', 20);
   noStroke();
 
-  joinedText = joinedText.join(joinedText, ' ');
+  // joinedText = joinedText.join(joinedText, ' ');
   charSet = getUniqCharacters();
   for (var i = 0; i < charSet.length; i++) {
     counters[i] = 0;
@@ -99,8 +32,9 @@ function setup() {
   countCharacters();
 }
 
+// inspired by the example in generative design  by Benedikt Gross
 function draw() {
-  background(360);
+  background(28, 22, 70);
 
   posX = 80;
   posY = 300;
@@ -114,9 +48,9 @@ function draw() {
     if (index < 0) continue;
 
     // calculate parameters
-    var charAlpha = 100;
-    if (drawAlpha) {
-      charAlpha = counters[index];
+    var charOpacity = 100;
+    if (drawOpacity) {
+      charOpacity = counters[index];
     }
 
     var my = map(mouseY, 50, height - 50, 0, 1);
@@ -133,17 +67,23 @@ function draw() {
     // draw elements
     push();
     translate(posX, posY);
-    stroke(273, 73, 51, charAlpha);
+    // stroke(273, 73, 51, charOpacity);
+    stroke(0, 137, 160, charOpacity);
     if (drawLines) {
       line(0, 0, newPosX, newPosY);
     }
     noStroke();
-    fill(52, 100, 71, charAlpha);
+
+    // elipse color
+    // fill(194, 198, 67, charOpacity * 2);
+    // fill(125, 234, 255, (charOpacity)*4);
+    fill(111, 90, 254, charOpacity*4);
+
     if (drawEllipses) {
       ellipse(0, 0, charSize / 10, charSize / 10);
     }
     if (drawText) {
-      fill(0, charAlpha);
+      fill(255,255,255, charOpacity*5);
       text(joinedText.charAt(i), newPosX, newPosY);
     }
     pop();
@@ -176,12 +116,11 @@ function countCharacters() {
 function keyReleased() {
   if (key == 's' || key == 'S') saveCanvas(gd.timestamp(), 'png');
 
-  if (key == '1') drawAlpha = !drawAlpha;
+  if (key == '1') drawOpacity = !drawOpacity;
   if (key == '2') drawLines = !drawLines;
   if (key == '3') drawEllipses = !drawEllipses;
   if (key == '4') drawText = !drawText;
 }
-
 
 function windowResized() {  
   resizeCanvas(windowWidth, windowHeight);

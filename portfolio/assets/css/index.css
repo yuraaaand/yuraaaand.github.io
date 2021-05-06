@@ -148,11 +148,31 @@ a:hover {
 }
 
 .content h1 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 600;
   font-style: italic;
   color:#DB00FF;
+  -webkit-transition: color 1s ease-in-out, -webkit-transform 3s ease-in-out;
+  transition: color 1s ease-in-out, -webkit-transform 3s ease-in-out;
+  transition: transform 3s ease-in-out, color 1s ease-in-out;
+  transition: transform 3s ease-in-out, color 1s ease-in-out, -webkit-transform 3s ease-in-out;
+}
+
+.content h3 {
+  font-size: 0.8rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 600;
+  text-decoration: underline;
+  color:#DB00FF;
+  -webkit-transition: color 1s ease-in-out, -webkit-transform 3s ease-in-out;
+  transition: color 1s ease-in-out, -webkit-transform 3s ease-in-out;
+  transition: transform 3s ease-in-out, color 1s ease-in-out;
+  transition: transform 3s ease-in-out, color 1s ease-in-out, -webkit-transform 3s ease-in-out;
+}
+
+.content h3:hover {
+  color:#B8D30D;
   -webkit-transition: color 1s ease-in-out, -webkit-transform 3s ease-in-out;
   transition: color 1s ease-in-out, -webkit-transform 3s ease-in-out;
   transition: transform 3s ease-in-out, color 1s ease-in-out;
@@ -170,6 +190,12 @@ a:hover {
   transition: color 1s ease-in-out, -webkit-transform 3s ease-in-out;
   transition: transform 3s ease-in-out, color 1s ease-in-out;
   transition: transform 3s ease-in-out, color 1s ease-in-out, -webkit-transform 3s ease-in-out;
+}
+
+.content p.small {
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-style: italic;
 }
 
 

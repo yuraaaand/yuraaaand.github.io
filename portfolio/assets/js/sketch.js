@@ -1,8 +1,4 @@
 var canvas;
-function preload() {
-  joinedText = loadStrings('assets/texts/thelittleprince.txt');
-}
-
 
 function setup() {
     canvas = createCanvas(0.2*windowWidth, 0.4*windowHeight);
