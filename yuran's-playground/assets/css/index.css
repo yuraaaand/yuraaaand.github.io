@@ -22,6 +22,7 @@ canvas[resize] {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  background: linear-gradient(0deg, #FFFFFF -49.71%, rgba(255, 255, 255, 0) 114.76%), #BEF3FF;
 }
 
 .parallax-parent {
@@ -50,7 +51,7 @@ canvas[resize] {
   position: relative;
   width: 100vh;
   height: 300vw;
-  background: linear-gradient(64.91deg, #FFFFFF -31.43%, rgba(255, 255, 255, 0) 83.57%), radial-gradient(38.83% 9.72% at 85.7% 98.76%, rgba(184, 211, 13, 0.6) 0%, rgba(184, 211, 13, 0) 73.61%), radial-gradient(39.91% 8.95% at 17.65% 81.64%, rgba(240, 188, 248, 0.8) 0%, rgba(240, 188, 248, 0) 77.26%), radial-gradient(86.74% 19.44% at 70.93% 20.17%, #FFDBEF 22.05%, rgba(239, 219, 230, 0) 99.92%), radial-gradient(45.04% 45.04% at 50% 50%, #FFDAB2 0%, rgba(255, 218, 178, 0) 100%), #BEF3FF;
+  background: linear-gradient(90deg, #FFFFFF -49.71%, rgba(255, 255, 255, 0) 114.76%), radial-gradient(31.39% 7.86% at 69.55% 92.86%, rgba(184, 211, 13, 0.6) 0%, rgba(184, 211, 13, 0) 83.33%), radial-gradient(39.91% 8.95% at 17.65% 81.64%, rgba(240, 188, 248, 0.8) 0%, rgba(240, 188, 248, 0) 77.26%), radial-gradient(86.74% 19.44% at 70.93% 20.17%, #FFDBEF 22.05%, rgba(239, 219, 230, 0) 99.92%), radial-gradient(45.04% 45.04% at 50% 50%, #FFDAB2 0%, rgba(255, 218, 178, 0) 100%), #BEF3FF;
   z-index: -1;
 }
 
