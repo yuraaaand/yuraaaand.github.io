@@ -31,5 +31,5 @@ function flower() {
 }
 
 function windowResized() {  
-  resizeCanvas(0.5*windowWidth, 0.5*windowHeight);
+  resizeCanvas(0.2*windowWidth, 0.4*windowHeight);
 }

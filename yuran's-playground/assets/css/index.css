@@ -199,6 +199,28 @@ a:hover {
   font-weight: 700;
 }
 
+.intro {
+  z-index: 999;
+  position: absolute;
+  left: 20%;
+  height: 40%;
+  width: 50%;
+  /* width: 100vh; */
+  /* height: 400vw; */
+}
+.intro p {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
+  color:#DB00FF;
+  margin: auto;
+  vertical-align: middle;
+  /* width: 50%; */
+}
+
 .picture {
   width: 54.4rem;
   height: auto;
