@@ -192,11 +192,19 @@ a:hover {
 .content p.small {
   font-size: 0.8rem;
   font-weight: 700;
-  font-style: italic;
 }
 
 .picture {
-  width: 50%;
+  width: 54.4rem;
   height: auto;
 }
 
+.vid {
+  width: 54.4rem;
+  height: 29.58rem;
+  /* width="640" height="348"  */
+}
+
+.fixed {
+  position: fixed;
+}
