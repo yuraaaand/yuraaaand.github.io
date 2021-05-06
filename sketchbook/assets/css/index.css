@@ -186,10 +186,7 @@ a:hover {
   font-weight: 400;
   color:#DB00FF;
   width: 50%;
-  -webkit-transition: color 1s ease-in-out, -webkit-transform 3s ease-in-out;
-  transition: color 1s ease-in-out, -webkit-transform 3s ease-in-out;
-  transition: transform 3s ease-in-out, color 1s ease-in-out;
-  transition: transform 3s ease-in-out, color 1s ease-in-out, -webkit-transform 3s ease-in-out;
+
 }
 
 .content p.small {
@@ -198,4 +195,8 @@ a:hover {
   font-style: italic;
 }
 
+.picture {
+  width: 50%;
+  height: auto;
+}
 
