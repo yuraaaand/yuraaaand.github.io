@@ -1,6 +1,6 @@
 var canvas;
 function preload() {
-  joinedText = loadStrings('assets/texts/thelittleprince.txt');
+    joinedText = loadStrings('thelittleprince.txt');
 }
 
 

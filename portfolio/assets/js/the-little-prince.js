@@ -79,7 +79,7 @@ var drawEllipses = true;
 var drawText = true;
 
 function preload() {
-  joinedText = loadStrings('texts/thelittleprince.txt');
+  joinedText = loadStrings('assets/js/thelittleprince.txt');
 }
 
 function setup() {
