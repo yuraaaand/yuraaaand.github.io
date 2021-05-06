@@ -50,7 +50,7 @@ canvas[resize] {
 .background-colors {
   position: relative;
   width: 100vh;
-  height: 300vw;
+  height: 400vw;
   background: linear-gradient(90deg, #FFFFFF -49.71%, rgba(255, 255, 255, 0) 114.76%), radial-gradient(31.39% 7.86% at 69.55% 92.86%, rgba(184, 211, 13, 0.6) 0%, rgba(184, 211, 13, 0) 83.33%), radial-gradient(39.91% 8.95% at 17.65% 81.64%, rgba(240, 188, 248, 0.8) 0%, rgba(240, 188, 248, 0) 77.26%), radial-gradient(86.74% 19.44% at 70.93% 20.17%, #FFDBEF 22.05%, rgba(239, 219, 230, 0) 99.92%), radial-gradient(45.04% 45.04% at 50% 50%, #FFDAB2 0%, rgba(255, 218, 178, 0) 100%), #BEF3FF;
   z-index: -1;
 }
@@ -75,6 +75,11 @@ canvas[resize] {
 .parallax-child-container:nth-of-type(3) {
   top: 200vw;
 }
+
+.parallax-child-container:nth-of-type(4) {
+  top: 300vw;
+}
+
 
 .parallax-child {
   position: absolute;
@@ -107,6 +112,11 @@ canvas[resize] {
   color: #B8D30D;
 }
 
+#tbc {
+  color:#F0BCF8;
+  cursor: default;
+}
+
 a:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -117,7 +127,7 @@ a:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 300vw;
+  width: 400vw;
   height: 100vh;
   -webkit-transform: translateX(-50%) translateY(180%) translateZ(-8px) scale(2.5) rotate(90deg);
           transform: translateX(-50%) translateY(180%) translateZ(-8px) scale(2.5) rotate(90deg);
