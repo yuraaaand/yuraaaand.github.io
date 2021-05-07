@@ -3,60 +3,73 @@
   <head>
     <script src="assets/js/p5.js"></script>
 
-    <!-- Load the Paper.js library -->
-    <!-- Load external PaperScript and associate it with myCanvas -->
-    <title>Yuran Ding</title>
+    <title>Yuran's Sketchbook</title>
     <meta charset="UTF-8" />
-    
+
     <link rel="stylesheet" href="assets/css/index.css" />
   </head>
 
   <body>
+    <!-- hotizontal parallax structure -->
     <main class="viewport">
+      <!-- things that stick on top go here -->
       <div class="intro">
-        <p><span style="font-weight: 600;">Hi! I'm Yuran Ding.</span>
-          <br><br>
-          I'm a junior at <i>Carnegie Mellon University</i>. I study <i>Cognitive Science</i>, <i>Human Computer Interaction</i> and <i>Communication Design</i>.
-          I love films, beautiful (perhaps useless) things, and things related to imaginations. I am a hoarder (both digitally and physically) of quirky things and objects.
-          <br><br>
-          This site collects fun stuffs and experiments that I did. Nothing serious. Feel free to leave me a message at <u>yurand@andrew.cmu.edu</u>. 
-          <br><br>
+        <p>
+          <span style="font-weight: 600;">Hi! I'm Yuran Ding.</span>
+          <br /><br />
+          I'm a junior at <i>Carnegie Mellon University</i>. I study
+          <i>Cognitive Science</i>, <i>Human Computer Interaction</i> and
+          <i>Communication Design</i>. I love films, beautiful (perhaps useless)
+          things, and things related to imaginations. I am a hoarder (both
+          digitally and physically) of quirky things and objects. <br /><br />
+          This site collects fun stuffs and experiments that I did. Nothing
+          serious. Feel free to leave me a message at
+          <u>yurand@andrew.cmu.edu</u>. <br /><br />
           Cheers ;)!
         </p>
       </div>
       <div class="parallax-parent">
+        <!-- things that scroll go here -->
         <div class="background-colors"></div>
 
         <section class="parallax-child-container">
           <div class="parallax-child">
-            <h1> <a href="it-has-done-me-good/it-has-done-me-good.html"> it has done me good. </a> </h1>
+            <h1>
+              <a href="it-has-done-me-good/it-has-done-me-good.html">
+                it has done me good.
+              </a>
+            </h1>
           </div>
         </section>
 
         <section class="parallax-child-container">
           <div class="parallax-child">
-            <h1> <a href="a-day-in-my-life/a-day-in-my-life.html"> a day in my life. </a> </h1>
+            <h1>
+              <a href="a-day-in-my-life/a-day-in-my-life.html">
+                a day in my life.
+              </a>
+            </h1>
           </div>
         </section>
 
         <section class="parallax-child-container">
           <div class="parallax-child">
-            <h1> <a href="happy-chair/happy-chair.html"> happy chair. </a> </h1>
+            <h1><a href="happy-chair/happy-chair.html"> happy chair. </a></h1>
           </div>
         </section>
 
         <section class="parallax-child-container">
           <div class="parallax-child">
-            <h1  id="tbc"> to be continued... </h1>
+            <h1 id="tbc">to be continued...</h1>
           </div>
         </section>
 
+        <!-- things at a greater distance and scroll at different speed go here -->
         <div class="parallax-background">
-          <h1> yuran's sketchbook.</h1>
+          <h1>yuran's sketchbook.</h1>
         </div>
       </div>
     </main>
-    <!-- <canvas id="myCanvas" resize></canvas> -->
 
     <script src="assets/js/sketch.js"></script>
   </body>

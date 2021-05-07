@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
-
+/* this is the style sheet for all pages */
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
@@ -17,12 +17,18 @@ canvas[resize] {
   display: block;
 }
 
+/* background colors for the fixed part */
 .viewport {
   position: relative;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background: linear-gradient(0deg, #FFFFFF -49.71%, rgba(255, 255, 255, 0) 114.76%), #BEF3FF;
+  background: linear-gradient(
+      0deg,
+      #FFFFFF -49.71%,
+      rgba(255, 255, 255, 0) 114.76%
+    ),
+    #BEF3FF;
 }
 
 .parallax-parent {
@@ -32,26 +38,52 @@ canvas[resize] {
   width: 100vh;
   height: 100vw;
   -webkit-transform-origin: top left;
-          transform-origin: top left;
+  transform-origin: top left;
   -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
   overflow-x: hidden;
   overflow-y: scroll;
   -webkit-perspective-origin: 50% 50% 0;
-          perspective-origin: 50% 50% 0;
+  perspective-origin: 50% 50% 0;
   -webkit-perspective: 3px;
-          perspective: 3px;
+  perspective: 3px;
 }
 
 .parallax-parent::-webkit-scrollbar {
   display: none;
 }
 
+/* background colors for the scrollable part */
 .background-colors {
   position: relative;
   width: 100vh;
   height: 400vw;
-  background: linear-gradient(90deg, #FFFFFF -49.71%, rgba(255, 255, 255, 0) 114.76%), radial-gradient(31.39% 7.86% at 69.55% 92.86%, rgba(184, 211, 13, 0.6) 0%, rgba(184, 211, 13, 0) 83.33%), radial-gradient(39.91% 8.95% at 17.65% 81.64%, rgba(240, 188, 248, 0.8) 0%, rgba(240, 188, 248, 0) 77.26%), radial-gradient(86.74% 19.44% at 70.93% 20.17%, #FFDBEF 22.05%, rgba(239, 219, 230, 0) 99.92%), radial-gradient(45.04% 45.04% at 50% 50%, #FFDAB2 0%, rgba(255, 218, 178, 0) 100%), #BEF3FF;
+  background: linear-gradient(
+      90deg,
+      #FFFFFF -49.71%,
+      rgba(255, 255, 255, 0) 114.76%
+    ),
+    radial-gradient(
+        31.39% 7.86% at 69.55% 92.86%,
+        rgba(184, 211, 13, 0.6) 0%,
+        rgba(184, 211, 13, 0) 83.33%
+      ),
+      radial-gradient(
+          39.91% 8.95% at 17.65% 81.64%,
+          rgba(240, 188, 248, 0.8) 0%,
+          rgba(240, 188, 248, 0) 77.26%
+        ),
+        radial-gradient(
+            86.74% 19.44% at 70.93% 20.17%,
+            #FFDBEF 22.05%,
+            rgba(239, 219, 230, 0) 99.92%
+          ),
+          radial-gradient(
+              45.04% 45.04% at 50% 50%,
+              #FFDAB2 0%,
+              rgba(255, 218, 178, 0) 100%
+            ),
+            #BEF3FF;
   z-index: -1;
 }
 
@@ -80,7 +112,6 @@ canvas[resize] {
   top: 300vw;
 }
 
-
 .parallax-child {
   position: absolute;
   top: 50%;
@@ -88,38 +119,39 @@ canvas[resize] {
   width: 100vw;
   padding: 0 30vw;
   -webkit-transform-origin: 50% 50% 0;
-          transform-origin: 50% 50% 0;
+  transform-origin: 50% 50% 0;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(90deg);
-          transform: translateX(-50%) translateY(-50%) rotate(90deg);
+  transform: translateX(-50%) translateY(-50%) rotate(90deg);
   z-index: 2;
 }
 
 .parallax-child h1 {
   font-size: 3rem;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-weight: 600;
-  color:#DB00FF;
+  color: #DB00FF;
   -webkit-transition: color 1s ease-in-out, -webkit-transform 3s ease-in-out;
   transition: color 1s ease-in-out, -webkit-transform 3s ease-in-out;
   transition: transform 3s ease-in-out, color 1s ease-in-out;
-  transition: transform 3s ease-in-out, color 1s ease-in-out, -webkit-transform 3s ease-in-out;
+  transition: transform 3s ease-in-out, color 1s ease-in-out,
+    -webkit-transform 3s ease-in-out;
   cursor: pointer;
 }
 
 .parallax-child h1:hover {
   -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
   color: #B8D30D;
 }
 
 #tbc {
-  color:#F0BCF8;
+  color: #F0BCF8;
   cursor: default;
 }
 
 a:hover {
   -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
   color: inherit;
 }
 
@@ -129,15 +161,17 @@ a:hover {
   left: 50%;
   width: 400vw;
   height: 100vh;
-  -webkit-transform: translateX(-50%) translateY(180%) translateZ(-8px) scale(2.5) rotate(90deg);
-          transform: translateX(-50%) translateY(180%) translateZ(-8px) scale(2.5) rotate(90deg);
+  -webkit-transform: translateX(-50%) translateY(180%) translateZ(-8px)
+    scale(2.5) rotate(90deg);
+  transform: translateX(-50%) translateY(180%) translateZ(-8px) scale(2.5)
+    rotate(90deg);
   z-index: 1;
 }
 
 .parallax-background h1 {
   height: 100vh;
   line-height: 100vh;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-weight: 700;
   font-style: italic;
   font-size: 8rem;
@@ -145,53 +179,52 @@ a:hover {
   -webkit-text-stroke: 0.1rem #F0BCF8;
   -webkit-text-fill-color: transparent;
 }
-/*# sourceMappingURL=index.css.map */
 
 .content {
-  /* background:rgba(240, 188, 248, 0.8); */
   margin: 1rem;
 }
 
 .content h1 {
   font-size: 1.8rem;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-weight: 600;
   font-style: italic;
-  color:#DB00FF;
+  color: #DB00FF;
   -webkit-transition: color 1s ease-in-out, -webkit-transform 3s ease-in-out;
   transition: color 1s ease-in-out, -webkit-transform 3s ease-in-out;
   transition: transform 3s ease-in-out, color 1s ease-in-out;
-  transition: transform 3s ease-in-out, color 1s ease-in-out, -webkit-transform 3s ease-in-out;
+  transition: transform 3s ease-in-out, color 1s ease-in-out,
+    -webkit-transform 3s ease-in-out;
 }
 
 .content h3 {
   font-size: 0.8rem;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-weight: 600;
   text-decoration: underline;
-  color:#DB00FF;
+  color: #DB00FF;
   -webkit-transition: color 1s ease-in-out, -webkit-transform 3s ease-in-out;
   transition: color 1s ease-in-out, -webkit-transform 3s ease-in-out;
   transition: transform 3s ease-in-out, color 1s ease-in-out;
-  transition: transform 3s ease-in-out, color 1s ease-in-out, -webkit-transform 3s ease-in-out;
+  transition: transform 3s ease-in-out, color 1s ease-in-out,
+    -webkit-transform 3s ease-in-out;
 }
 
 .content h3:hover {
-  color:#B8D30D;
+  color: #B8D30D;
   -webkit-transition: color 1s ease-in-out, -webkit-transform 3s ease-in-out;
   transition: color 1s ease-in-out, -webkit-transform 3s ease-in-out;
   transition: transform 3s ease-in-out, color 1s ease-in-out;
-  transition: transform 3s ease-in-out, color 1s ease-in-out, -webkit-transform 3s ease-in-out;
+  transition: transform 3s ease-in-out, color 1s ease-in-out,
+    -webkit-transform 3s ease-in-out;
 }
-
 
 .content p {
   font-size: 1rem;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
-  color:#DB00FF;
+  color: #DB00FF;
   width: 50%;
-
 }
 
 .content p.small {
@@ -205,20 +238,18 @@ a:hover {
   left: 20%;
   height: 40%;
   width: 50%;
-  /* width: 100vh; */
-  /* height: 400vw; */
 }
+
 .intro p {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   font-size: 0.8rem;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
-  color:#DB00FF;
+  color: #DB00FF;
   margin: auto;
   vertical-align: middle;
-  /* width: 50%; */
 }
 
 .picture {
@@ -229,9 +260,10 @@ a:hover {
 .vid {
   width: 54.4rem;
   height: 29.58rem;
-  /* width="640" height="348"  */
 }
 
 .fixed {
   position: fixed;
 }
+
+/*# sourceMappingURL=index.css.map */
